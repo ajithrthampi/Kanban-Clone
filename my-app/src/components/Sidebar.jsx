@@ -33,38 +33,38 @@ const Sidebar = () => {
 
                 {/* Home section */}
                 <div className='pt-[50px] flex flex-col  gap-[18px] text-[#787486] font-Inter'>
-                    <h2 className='flex items-center  gap-[15px] '>
+                    <div className='flex items-center  gap-[15px] '>
                         <div className='text-xl'>
                             <BsGrid/>
                         </div>
-                        <h1 className='font-medium text-sm'>Home</h1>
-                    </h2>
-                    <h2 className='flex items-center gap-[15px]'>
+                        <h3 className='font-medium text-sm'>Home</h3>
+                    </div>
+                    <div className='flex items-center gap-[15px]'>
                         <div className='text-xl'>
                             <BiMessageAltMinus/>
                         </div>
-                        <h1 className='font-medium text-sm'>Messages</h1>
-                    </h2>
-                    <h2 className='flex items-center gap-[15px]'>
+                        <h3 className='font-medium text-sm'>Messages</h3>
+                    </div>
+                    <div className='flex items-center gap-[15px]'>
                         <div className='text-xl'>
                             <BiTask/>
                         </div>
-                        <h1 className='font-medium text-sm'>Tasks</h1>
+                        <h3 className='font-medium text-sm'>Tasks</h3>
 
-                    </h2>
-                    <h2 className='flex items-center gap-[15px]'>
+                    </div>
+                    <div className='flex items-center gap-[15px]'>
                         <div className='text-xl'>
                             <BsPeople/>
                         </div>
-                        <h1 className='font-medium text-sm'>Members</h1>
-                    </h2>
-                    <h2 className='flex items-center gap-[15px]'>
+                        <h3 className='font-medium text-sm'>Members</h3>
+                    </div>
+                    <div className='flex items-center gap-[15px]'>
                         <div className='text-xl'>
                             <CiSettings/>
                         </div>
-                        <h1 className='font-medium text-sm'>Settings</h1>
-                    </h2>
-                    <hr class="h-px  -ml-[13px] -mr-5 bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <h3 className='font-medium text-sm'>Settings</h3>
+                    </div>
+                    <hr className="h-px  -ml-[13px] -mr-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                 </div>
 
                 {/* MY PROJECTS */}
@@ -130,7 +130,7 @@ const Sidebar = () => {
 
             </div>
             
-            <hr class="h-px my-[73px] w-screen bg-gray-200 border-0 dark:bg-gray-700"/>
+            <hr className="h-px my-[73px] w-screen bg-gray-200 border-0 dark:bg-gray-700"/>
             
 
         </>

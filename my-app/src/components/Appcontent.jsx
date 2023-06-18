@@ -28,7 +28,7 @@ const Appcontent = () => {
                             </div>
                         </div>
                     </div>
-                    <hr class="h-[2px] my-4  bg-[#5030E5] border-0 dark:bg-gray-700"/> {/* CARD */}
+                    <hr className="h-[2px] my-4  bg-[#5030E5] border-0 dark:bg-gray-700"/> {/* CARD */}
                     <div className='flex flex-col gap-5  overflow-y-scroll scrollbar-hide absolute bottom-0 top-[90px] right-5 left-5 mb-0.5'>
                         <div className='  bg-[#FFFFFF] w-full h-full rounded-xl p-3 px-5 pb-6 '>
                             <div className='flex items-center justify-between pt-2 relatve'>
@@ -151,7 +151,7 @@ const Appcontent = () => {
                         </div>
 
                     </div>
-                    <hr class="h-[2px] my-4  bg-[#FFA500]  border-0 dark:bg-gray-700"/>
+                    <hr className="h-[2px] my-4  bg-[#FFA500]  border-0 dark:bg-gray-700"/>
 
                     <div className='flex flex-col gap-5  overflow-y-scroll scrollbar-hide absolute bottom-0 top-[90px] right-5 left-5 mb-0.5'>
                         <div className='  bg-[#FFFFFF] w-full h-full rounded-xl p-3 px-5 pb-6'>
@@ -244,7 +244,7 @@ const Appcontent = () => {
                         </div>
 
                     </div>
-                    <hr class="h-[2px] my-4  bg-[#8BC48A] border-0 dark:bg-gray-700"/>
+                    <hr className="h-[2px] my-4  bg-[#8BC48A] border-0 dark:bg-gray-700"/>
 
                     <div className='flex flex-col gap-5  overflow-y-scroll scrollbar-hide absolute bottom-0 top-[90px] right-5 left-5 mb-0.5'>
                         <div className='  bg-[#FFFFFF] w-full h-full rounded-xl p-3 px-5 pb-6'>

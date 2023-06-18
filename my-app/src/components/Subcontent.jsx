@@ -73,8 +73,8 @@ const Subcontent = () => {
                     </div>
 
                     <button className='flex items-center justify-center gap-0.5 flex-col  rounded-md text-sm font-Inter px-3 py-3 bg-[#5030E5]'>
-                        <hr class="w-3.5 h-1.5 mx  bg-gray-100 border-0 rounded-sm  dark:bg-gray-700"></hr>
-                        <hr class="w-3.5 h-1.5 mx  bg-gray-100 border-0 rounded-sm  dark:bg-gray-700"></hr>
+                        <hr className="w-3.5 h-1.5 mx  bg-gray-100 border-0 rounded-sm  dark:bg-gray-700"></hr>
+                        <hr className="w-3.5 h-1.5 mx  bg-gray-100 border-0 rounded-sm  dark:bg-gray-700"></hr>
                     </button>
                     <div className='text-xl text-[#787486]'>
                         <CiGrid41/>
