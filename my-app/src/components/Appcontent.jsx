@@ -166,7 +166,7 @@ const Appcontent = ({id}) => {
                         <div className='flex gap-3 items-center'>
                             <div className='bg-[#5030E5] rounded w-2 h-2'></div>
                             <h4 className='font-Inter font-medium text-base'>To Do</h4>
-                            <div className='rounded-full bg-[#E0E0E0] flex w-5 h-5 text-xs items-center font-Inter  justify-center text-[#625F6D]'>4</div>
+                            <div className='rounded-full bg-[#E0E0E0] flex w-5 h-5 text-xs items-center font-Inter  justify-center text-[#625F6D]'>{}</div>
                         </div>
                         <div>
                             <div className='bg-[#dcd6fa] w-5 font-Inter  h-5 rounded-md flex justify-center text-[12px] items-center text-[#5030E5]'>
@@ -306,7 +306,7 @@ const Appcontent = ({id}) => {
                                         <BiDotsHorizontalRounded/>
                                     </div>
                                 </div>
-                                <h1 className='font-Inter font-semibold text-lg pt-1'>Onboarding Illustrations
+                                <h1 className='font-Inter font-semibold text-lg pt-1'>{cardProcess.name}
                                 </h1>
                                 
                                 <div className='flex items-center justify-center xl:gap-1 gap-0 pt-1 '>
