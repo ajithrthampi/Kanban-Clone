@@ -141,6 +141,14 @@ const Appcontent = ({id}) => {
     //  setCompleted(complete)
     //  settodos(active)
 
+    // if(source.droppableId === "onProgress") {
+    //     add = complete[source.index]
+    //     complete.splice(source.index, 1)
+    //  } else {
+    //     add = complete[source.index]
+    //     complete.splice(source.index, 1)
+    //  } 
+
      console.log(add);
      
     }
@@ -278,12 +286,20 @@ const Appcontent = ({id}) => {
                     <hr className="h-[2px] my-4  bg-[#FFA500]  border-0 dark:bg-gray-700"/>
                 <Droppable droppableId='onProgress'>
                     {
-                        (provided) => (
+                        (provided,snapshot) => (
                              <div className='flex flex-col gap-5  overflow-y-scrol scrollbar-hide absolut bottom-0 top-[90px] right-5 left-5 mb-0.5' 
-                             ref={provided.innerRef} {...provided.droppableProps}>
+                             ref={provided.innerRef} {...provided.droppableProps}
+                             idDraggingOver={snapshot.isDraggingOver}
+                             >
                         {
                         OnProcess.map((cardProcess, index) => (
-                            <div className='  bg-[#FFFFFF] w-full  rounded-xl p-3 px-5 pb-6'>
+                            <Draggable draggableId={cardProcess.id.toString()} index={index} key={cardProcess.id}>
+                                {(provided) => (
+                                     <div className='  bg-[#FFFFFF] w-full  rounded-xl p-3 px-5 pb-6'
+                                     {...provided.draggableProps}
+                                     {...provided.dragHandleProps}
+                                     ref={provided.innerRef}
+                                     >
                                 <div className='flex items-center justify-between pt-2 relatve'>
                                     <h3 className='font-Inter bg-[#f9eee3] text-xs rounded-[4px] py-1 px-1.5 text-[#D58D49]'>Low</h3>
                                     <div className='text-xl'>
@@ -342,11 +358,16 @@ const Appcontent = ({id}) => {
                                         </div>
                                     </div>
                                 </div>
+                                {provided.placeholder}
                             </div>
+                                )}
+                                 
+                            </Draggable>
+                          
                         ))
                     }
 
-
+                       {provided.placeholder}
                        </div>
                         )
                     }
